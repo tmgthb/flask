@@ -1,2 +1,2 @@
-set FLASK_APP=start
-flask run
+web: set FLASK_APP=start
+web: flask run
