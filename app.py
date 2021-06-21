@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
 @app.route('/')
 def home():
@@ -7,7 +7,7 @@ def home():
 
 @app.route('/info/')
 def info():
-    return 'Info'
+    return render_template('info.html')
 
 if __name__ == '__main__':
     app.run()
