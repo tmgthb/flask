@@ -23,6 +23,7 @@ def dashboard():
     # init a basic bar chart:
     # http://bokeh.pydata.org/en/latest/docs/user_guide/plotting.html#bars
     fig = figure(plot_width=600, plot_height=600)
+    fig.background_fill_color = "white"
     fig.vbar(
         x=[1, 2, 3, 4],
         width=0.5,
