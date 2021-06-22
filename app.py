@@ -25,10 +25,10 @@ def dashboard():
     fig = figure(plot_width=600, plot_height=600)
     fig.background_fill_color = "white"
     fig.vbar(
-        x=[1, 2, 3, 4],
+        x=[2018, 2019, 2020, 2021],
         width=0.5,
         bottom=0,
-        top=[1.7, 2.2, 4.6, 3.9],
+        top=[2.7, 0.2, 2.6, 6.9],
         color='navy'
     )
 
