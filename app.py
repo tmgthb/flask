@@ -38,7 +38,7 @@ def dashboard():
     # render template
     script, div = components(fig)
     html = render_template(
-        'index.html',
+        'dashboard.html',
         plot_script=script,
         plot_div=div,
         js_resources=js_resources,
