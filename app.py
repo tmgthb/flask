@@ -13,7 +13,7 @@ def info():
     return render_template('info.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port) #https://github.com/dpgaspar/Flask-AppBuilder/issues/733#issuecomment-379009480
     #app.run()
 
 
