@@ -1,4 +1,7 @@
 from flask import Flask, request, render_template
+import os
+port = int(os.environ.get("PORT", 5000))
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -10,6 +13,7 @@ def info():
     return render_template('info.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=port)
+    #app.run()
 
 
