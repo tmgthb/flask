@@ -14,7 +14,7 @@ def home():
     return render_template('home.html')
 
 @app.route('/gptneo/')
-def info():
+def gptneo():
     return render_template('gptneo.html')
 
 @app.route('/info/')
